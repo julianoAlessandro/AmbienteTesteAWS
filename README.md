@@ -35,12 +35,4 @@ A arquitetura proposta permite a orquestração completa do fluxo de dados, desd
 ---
 
 ## 🗺️ Diagrama da Solução
-
-```mermaid
-graph TD
-    A[Arquivos .zip do Governo] --> B[S3 - Bucket de Entrada]
-    B --> C[Lambda - Descompactação]
-    C --> D[S3 - Arquivos .txt]
-    D --> E[Glue Crawler - Mapeamento dos Dados]
-    E --> F[DynamoDB - Base Tabular/JSON]
-    F --> G[Consultas SQL / CRUD via Aplicação]
+![Resumo do Projeto](https://github.com/user-attachments/assets/b2761dd4-4612-4f9a-a6b5-441489382068)
